@@ -12,7 +12,6 @@ public class PalindromeNumber {
 	}
 
 	public boolean isPalidrome(int n) {
-		// 12321
 		if (isNegativeNumber(n) || nuumberEndsWithZero(n)) {
 			return false;
 		}
