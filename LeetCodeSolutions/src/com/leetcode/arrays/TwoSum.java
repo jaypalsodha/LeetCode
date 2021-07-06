@@ -59,9 +59,8 @@ public class TwoSum {
 			} else {
 				map.put(nums[i], i);
 			}
-			throw new IllegalStateException("two number with sum are not present");
 		}
 
-		return null;
+		throw new IllegalStateException("two number with sum are not present");
 	}
 }
