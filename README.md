@@ -1,3 +1,3 @@
 # LeetCode
 
-leetcode problem solutions for goldam sachs.
+leetcode problem solutions for goldman sachs.
