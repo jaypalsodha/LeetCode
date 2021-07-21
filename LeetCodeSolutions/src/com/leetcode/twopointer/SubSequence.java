@@ -1,9 +1,11 @@
 package com.leetcode.twopointer;
 
+import java.util.Stack;
+
 public class SubSequence {
 
 	public static void main(String[] args) {
-		
+
 	}
 
 	public boolean isSubsequence(String s, String t) {
@@ -14,13 +16,54 @@ public class SubSequence {
 			if (s.charAt(p1) == t.charAt(p2)) {
 				p1++;
 				p2++;
-			} else {
+			} 
+			else {
 				p2++;
 			}
 		}
-		if (p1 == s.length())
+		return p1 == s.length();
+	}
+
+	public boolean isSubsequenceUsingCharMatch(String s, String t) {
+		if (s.length() == 0) {
 			return true;
-		return false;
+		}
+
+		int charPointer = 0;
+
+		char[] sArray = s.toCharArray();
+		char[] tArray = t.toCharArray();
+
+		for (int i = 0; i < t.length(); i++) {
+			if (tArray[i] == sArray[charPointer]) {
+				charPointer++;
+				if (charPointer == s.length()) {
+					return true;
+				}
+			}
+		}
+
+		return charPointer == s.length();
+	}
+
+	public boolean isSubsequenceUsingStack(String s, String t) {
+
+		if (s.isEmpty()) {
+			return true;
+		}
+
+		Stack<Character> stack = new Stack<>();
+		stack.push('#');
+		for (int i = s.length() - 1; i >= 0; i++) {
+			stack.push(s.charAt(i));
+		}
+
+		for (int i = 0; i < t.length(); i++) {
+			if (stack.peek() == t.charAt(i)) {
+				stack.pop();
+			}
+		}
+		return stack.peek() == '@';
 	}
 
 	/*

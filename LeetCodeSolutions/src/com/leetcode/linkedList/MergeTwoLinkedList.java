@@ -1,7 +1,5 @@
 package com.leetcode.linkedList;
 
-import java.util.List;
-
 public class MergeTwoLinkedList {
 
     /*
@@ -20,24 +18,23 @@ public class MergeTwoLinkedList {
     }
 
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
-        ListNode p1 = l1, p2 = l2;
         ListNode newNode = new ListNode(0); // temp node to start
         ListNode head = newNode;
-        while (p1 != null && p2 != null) {
-            if (p1.val <= p1.val) {
-                head.next = new ListNode(p1.val);
+        while (l1 != null && l2 != null) {
+            if (l1.val <= l1.val) {
+                head.next = new ListNode(l1.val);
                 l1 = l1.next;
             } else {
-                head.next = new ListNode(p2.val);
+                head.next = new ListNode(l2.val);
                 l2 = l2.next;
             }
             head = head.next;
         }
-        if (p1 == null && p2 != null) {
-            head.next = p2;
+        if (l1 == null && l2 != null) {
+            head.next = l2;
         }
-        if (p1 != null && p2 == null) {
-            head.next = p1;
+        if (l1 != null && l2 == null) {
+            head.next = l1;
         }
         return newNode.next;
     }
