@@ -45,7 +45,6 @@ public class BubbleSort {
 		for (int i = 0; i < elements.length; i++) {
 			elementSwapped = false;
 			for (int j = 0; j < n - i - 1; j++) {
-
 				if (elements[j] > elements[j + 1]) {
 					int temp = elements[j];
 					elements[j] = elements[j + 1];
