@@ -10,13 +10,20 @@
     <fullyQualifiedTypeName name="java.util.ArrayDeque"/>
     <fullyQualifiedTypeName name="com.leetcode.arrays.SlidingWindow"/>
     <fullyQualifiedTypeName name="java.awt.List"/>
-    <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
     <fullyQualifiedTypeName name="java.util.Map.Entry"/>
     <fullyQualifiedTypeName name="java.util.LinkedHashMap"/>
     <fullyQualifiedTypeName name="com.leetcode.twopointer.SquareOfSortedArray"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.leetcode.matrix.CoveredInterval"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="com.leetcode.arrays.FindDuplicate"/>
     <fullyQualifiedTypeName name="com.leetcode.arrays.FindSecondHighest"/>
+    <fullyQualifiedTypeName name="com.leetcode.sorting.BubbleSort"/>
+    <fullyQualifiedTypeName name="java.lang.ArrayStoreException"/>
+    <fullyQualifiedTypeName name="com.leetcode.sorting.InsertionSort"/>
+    <fullyQualifiedTypeName name="javax.sound.midi.MidiChannel"/>
+    <fullyQualifiedTypeName name="com.leetcode.sorting.SelectionSort"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
+    <fullyQualifiedTypeName name="com.leetcode.queue.QueueByArray"/>
+    <fullyQualifiedTypeName name="com.leetcode.matrix.MatrixTraversal"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
 </qualifiedTypeNameHistroy>
